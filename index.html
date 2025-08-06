@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Promedio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simulador de Promedio</h1>
+
+      <form id="formularioNotas">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required />
+
+        <label for="cantidad">Cantidad de materias:</label>
+        <input type="number" id="cantidad" min="1" max="20" required />
+
+        <div id="notasContainer"></div>
+
+        <button type="submit">Calcular Promedio</button>
+      </form>
+
+      <div id="resultado" class="hidden"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
